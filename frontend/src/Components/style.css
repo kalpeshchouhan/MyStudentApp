@@ -1,0 +1,7 @@
+.active {
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1.2rem;
+}

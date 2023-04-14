@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.maincotainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  box-shadow: 1px 1px 1px black;
+  background-color: #5c5cff;
+  border: 2px solid black;
+}
+.filter:hover {
+  background-color: #b33f40;
+}
+.filter > form {
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter > form > input {
+  width: 30%;
+  height: 2rem;
+  padding-left: 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  color: gray;
+  font-family: monospace;
+}
+.filter > form > p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+.filter > form > button {
+  width: 12%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+  font-family: monospace;
+  background: white;
+  border: 2px solid gray;
+}
+.filter > button {
+  width: 10%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+  font-family: monospace;
+  background: white;
+  border: 2px solid gray;
+}
+.filter > form > button:hover {
+  background-color: wheat;
+  border: none;
+  outline: none;
+  color: black;
+}
+.filter > button:hover {
+  background-color: wheat;
+  border: none;
+  outline: none;
+}
+.filter > form > input:focus {
+  background-color: cornsilk;
+}
+.incontainer {
+  width: 50%;
+  height: 100vh;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.heading {
+  width: 90%;
+  height: 3rem;
+  border: 2px solid black;
+  display: flex;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  table-layout: fixed;
+  position: sticky;
+  background-color: #5c5cff;
+}
+
+.heading > div {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading > div > p {
+  color: white;
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.listd {
+  width: 90%;
+  height: 3rem;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px black, 2px 2px 2px #e8e8e8;
+  display: flex;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  table-layout: fixed;
+  background-color: #e8e8e8;
+}
+.listd:hover {
+  background-color: whitesmoke;
+}
+.listd > div {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listd > div > p {
+  color: black;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.listd > div > p:hover {
+  color: #5c5cff;
+}
+.listd > div > button {
+  width: 50%;
+  height: 1.5rem;
+  border: 1px solid gray;
+  border-radius: 0.8rem;
+  outline: none;
+  color: black;
+  font-family: monospace;
+  font-size: 1rem;
+}
+.listd > div > button:hover {
+  background-color: #5c5cff;
+  color: white;
+}
+.modalmaincontainer {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+.insidedivone {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.insidedivone > div {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.insidedivone > div > p {
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: darkolivegreen;
+}
+
+.insidedivone > div > button {
+  width: 5%;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: bisque;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+.insidedivone > div > button:hover {
+  transition: all 1s ease-in-out;
+  background-color: rgb(212, 101, 101);
+}
+.insidedivtwo {
+  width: 100%;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+}
+.insidedivtwo > div {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  overflow: hidden;
+}
+.insidedivtwo > div > div {
+  width: 50%;
+  height: inherit;
+}
+
+.insidedivtwo > div > div > p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: chocolate;
+  font-family: monospace;
+}
+.insidedivtwo > div > div > p > span {
+  font-size: 1rem;
+  color: darkslategray;
+}
+.insidedivthree {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.insidedivthree > div {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.insidedivthree > div > button {
+  width: 20%;
+  height: 2rem;
+  background-color: white;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.8rem;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.insidedivthree > div > button:hover {
+  background-color: #b33f40;
+  transition: all 0.4s ease-in;
+  color: white;
+}
+.paragrahp {
+  font-family: monospace;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+.btndiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.btndiv > button {
+  width: 30%;
+  height: 2rem;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  outline: none;
+  color: black;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.btndiv > button:hover {
+  background-color: darkslategrey;
+  border: none;
+  color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .maincotainer {
+    height: 100vh;
+  }
+  .incontainer {
+    width: 95%;
+  }
+  .heading > div > p {
+    font-size: 0.8rem;
+  }
+  .listd > div > p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .listd > div > button {
+    width: 70%;
+    height: 1.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .filter {
+    width: 98%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .filter > form {
+    width: 98%;
+  }
+  .filter > form > p {
+    font-size: 1rem;
+  }
+  .filter > form > input {
+    width: 25%;
+    height: 2rem;
+    padding-left: 0.3rem;
+    font-size: 0.7rem;
+  }
+  .filter > form > button {
+    width: 20%;
+    height: 2rem;
+    font-size: 0.7rem;
+    background-color: rgb(26, 215, 61);
+    color: #ffffff;
+    font-weight: bolder;
+    border: none;
+  }
+  .filter > button {
+    width: 20%;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  .insidedivtwo > div > div > p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .insidedivtwo > div > div > p > span {
+    font-size: 0.8rem;
+    color: darkslategray;
+  }
+  .insidedivthree > div > button {
+    width: 30%;
+    height: 2rem;
+    background-color: white;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .maincotainer {
+    height: 100vh;
+  }
+  .incontainer {
+    width: 95%;
+  }
+  .filter {
+    width: 98%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .maincotainer {
+    height: 100vh;
+  }
+  .incontainer {
+    width: 90%;
+  }
+  .filter {
+    width: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .maincotainer {
+    height: 100vh;
+  }
+  .incontainer {
+    width: 70%;
+  }
+  .filter {
+    width: 70%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .maincotainer {
+    height: 100vh;
+  }
+  .incontainer {
+    width: 60%;
+  }
+  .filter {
+    width: 60%;
+  }
+}
